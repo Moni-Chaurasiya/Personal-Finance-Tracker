@@ -87,9 +87,9 @@ router.get('/',auth,async (req,res)=>{
         if(category) query.category=category;
         if(type) query.type=type;
         if(startDate || endDate){
-            query.createdAt={};
-            if(startDate) query.createdAt.$gte=new Date(startDate);
-            if(endDate) query.createdAt.$lte=new Date(endDate)
+            query.date={};
+            if(startDate) query.date.$gte=new Date(startDate);
+            if(endDate) query.date.$lte=new Date(endDate)
         }
         const transaction=await Transaction.find(query).sort({date:-1})
         res.json(transaction);

@@ -20,6 +20,10 @@ const transactionSchema=new mongoose.Schema({
         required:true,
         enum:['Food','Transport','Entertainment','Shopping','Bills','Salary','Other']
     },
+    date:{
+        type:Date,
+        required:true
+    },
     type:{
         type:String,
         enum:['income','expense'],
