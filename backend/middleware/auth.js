@@ -1,7 +1,7 @@
 const jwt= require('jsonwebtoken');
 
 module.exports = function(req,res,next){
-    const token= req.cookies.token || req.header['authorization'].replace('Bearer ', '')
+    const token= req.headers["authorization"] && req.headers["authorization"].replace("Bearer ", "");
     if(!token){
         return res.status(401).json({message:'No token, authorization denied'})
     }
