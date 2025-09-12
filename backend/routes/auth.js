@@ -50,7 +50,7 @@ router.post('/register',async(req,res)=>{
     }
 })
 
-router.post('./login',async(req,res)=>{
+router.post('/login',async(req,res)=>{
     try {
         const {email,password}=req.body;
         let user=await User.findOne({email});
@@ -85,12 +85,14 @@ router.post('./login',async(req,res)=>{
     }
 })
 
-router.get('./user',async(req,res)=>{
+router.get('./user',auth ,async(req,res)=>{
     try {
-        const user=await User.findById(req.user.id).select('password')
+        const user=await User.findById(req.user.id).select('-password')
         res.json(user)
     } catch (error) {
          console.log("Error getting user", error.message)
          res.status(500).send('Server error');
     }
 })
+
+module.exports=router;
