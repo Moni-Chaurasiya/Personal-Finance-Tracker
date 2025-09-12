@@ -15,6 +15,7 @@ app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI).then(()=>console.log('MongoDB connected')).catch((err)=>console.log('MongoDB connection error:',err))
 
 app.use('/api/auth',require('./routes/auth'));
+app.use('/transaction',require('./routes/transactions'))
 
 app.get('/',(req,res)=>{
     res.json({message:'Finance Tracker API is running'})
