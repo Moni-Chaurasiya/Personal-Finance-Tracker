@@ -51,7 +51,7 @@ function EditTransaction() {
         ? -Math.abs(parseFloat(formData.amount))
         : Math.abs(parseFloat(formData.amount));
 
-      await api.put(`/transactions/${id}`, {
+      await api.put(`/transaction/${id}`, {
         ...formData,
         amount
       });
