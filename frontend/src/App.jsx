@@ -36,7 +36,7 @@ function App(){
 
   return(
     <Router>
-      <div classname="App">
+      <div className="App">
          <Navbar user={user} onLogout={handleLogout}/>
          <Routes>
           <Route 
@@ -45,11 +45,11 @@ function App(){
                  />
           <Route 
             path="/login"
-            element={!token? <Login onLogin={handleLogin}/> : <Navigate to=""/>}
+            element={!token? <Login onLogin={handleLogin}/> : <Navigate to="/"/>}
                  />
           <Route  
             path="/register"  
-            element={!token? <Register onLogin={handleLogin}/> : <Navigate to=""/>}
+            element={!token? <Register onLogin={handleLogin}/> : <Navigate to="/"/>}
             />
           <Route  
             path="/add"

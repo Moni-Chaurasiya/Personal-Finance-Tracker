@@ -3,7 +3,7 @@ const router = express.Router()
 const Transaction=require('../models/Transaction');
 const auth= require('../middleware/auth');
 
-router.post('/', async(req,res)=>{
+router.post('/',auth, async(req,res)=>{
     try {
         const {title,amount,category,date,type} = req.body;
         const newTransaction= new Transaction({
@@ -99,3 +99,4 @@ router.get('/',auth,async (req,res)=>{
     }
 })
 
+module.exports=router;

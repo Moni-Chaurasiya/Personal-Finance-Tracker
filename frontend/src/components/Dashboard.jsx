@@ -1,6 +1,6 @@
 import React , {useState,useEffect} from 'react';
 import TransactionList from './TransactionList';
-import Charts from './chart';
+//import Charts from './chart';
 import api from '../utils/api';
 
 function Dashboard(){
@@ -57,7 +57,7 @@ function Dashboard(){
     }
 
     const clearFilters=()=>{
-        setStats({
+        setFilter({
         category:'',
         type:'',
         startDate:'',
@@ -157,7 +157,7 @@ function Dashboard(){
           </div>
         </div>
 
-        <Charts transactions={transaction} />
+        {/* <Charts transactions={transaction} /> */}
         
         <TransactionList 
           transactions={transaction}

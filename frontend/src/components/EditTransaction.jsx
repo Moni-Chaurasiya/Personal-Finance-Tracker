@@ -21,7 +21,7 @@ function EditTransaction() {
 
   const fetchTransaction = async () => {
     try {
-      const response = await api.get(`/transactions/${id}`);
+      const response = await api.get(`/transaction/${id}`);
       const transaction = response.data;
       setFormData({
         title: transaction.title,
