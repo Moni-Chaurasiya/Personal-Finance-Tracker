@@ -1,8 +1,7 @@
-💰 Personal Finance Tracker (MERN Stack)
+# 💰 Personal Finance Tracker (MERN Stack)
 A full-stack MERN application to track personal finances with CRUD functionality.
 This project contains both frontend (React + Vite) and backend (Node.js + Express + MongoDB) in a single repository.
 
-## 📂 Project Structure
 
 ## 🛠️ Tech Stack
 - **Frontend:** React (Vite), Axios
@@ -13,7 +12,7 @@ This project contains both frontend (React + Vite) and backend (Node.js + Expres
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/Moni-Chaurasiya/Personal-Finance-Tracker.git
 cd <repo-name>
 ````
 
