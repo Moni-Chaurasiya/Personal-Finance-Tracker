@@ -1,47 +1,13 @@
-```markdown
-# 💰 Personal Finance Tracker (MERN Stack)
-
-A full-stack MERN application to track personal finances with CRUD functionality.  
-This project contains both **frontend (React + Vite)** and **backend (Node.js + Express + MongoDB)** in a single repository.
-
----
-
-## 📸 Preview
-
-![App Screenshot](./screenshot.png)  
-*(Replace `screenshot.png` with your actual screenshot file path)*
-
----
+💰 Personal Finance Tracker (MERN Stack)
+A full-stack MERN application to track personal finances with CRUD functionality.
+This project contains both frontend (React + Vite) and backend (Node.js + Express + MongoDB) in a single repository.
 
 ## 📂 Project Structure
 
-```
-
-.
-├── backend   # Node.js + Express + MongoDB
-├── frontend  # React (Vite)
-└── README.md
-
-````
-
----
-
-## 🚀 Features
-- Add, edit, delete, and list transactions  
-- Fields: `title`, `amount` (+ / -), `date`, `category`  
-- RESTful API with Express + MongoDB  
-- React frontend with clean UI/UX  
-- Real-time updates with state management  
-- Bonus: Authentication-ready structure, localStorage, and charts (optional)  
-
----
-
 ## 🛠️ Tech Stack
-- **Frontend:** React (Vite), Axios, TailwindCSS (if used)  
+- **Frontend:** React (Vite), Axios
 - **Backend:** Node.js, Express, MongoDB, Mongoose  
 - **Deployment:** Render (Backend), Vercel (Frontend)  
-
----
 
 ## ⚙️ Setup Instructions
 
