@@ -29,7 +29,7 @@ Create a `.env` file inside `backend/`:
 
 ```env
 MONGODB_URI=""
-JWT_SECRET= my-super-secret-key
+JWT_SECRET=""
 PORT=5000
 ```
 
