@@ -84,7 +84,7 @@ function Dashboard(){
           }}>
             <h3>Total Income</h3>
             <p style={{ fontSize: '24px', fontWeight: 'bold' }}>
-              ${stats.totalIncome.toFixed(2)}
+              ₹{stats.totalIncome.toFixed(2)}
             </p>
           </div>
           
@@ -96,7 +96,7 @@ function Dashboard(){
           }}>
             <h3>Total Expense</h3>
             <p style={{ fontSize: '24px', fontWeight: 'bold' }}>
-              ${stats.totalExpense.toFixed(2)}
+              ₹{stats.totalExpense.toFixed(2)}
             </p>
           </div>
           
@@ -108,7 +108,7 @@ function Dashboard(){
           }}>
             <h3>Balance</h3>
             <p style={{ fontSize: '24px', fontWeight: 'bold' }}>
-              ${stats.balance.toFixed(2)}
+              ₹{stats.balance.toFixed(2)}
             </p>
           </div>
         </div>

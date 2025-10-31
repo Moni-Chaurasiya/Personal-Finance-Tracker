@@ -107,7 +107,7 @@ function TransactionList({ transactions, onDelete }) {
                     fontWeight: 'bold',
                     color: transaction.type === 'income' ? '#48bb78' : '#f56565'
                   }}>
-                    {transaction.type === 'income' ? '+' : '-'}${formatAmount(transaction.amount)}
+                    {transaction.type === 'income' ? '+' : '-'}₹{formatAmount(transaction.amount)}
                   </td>
                   <td style={{ padding: '10px', textAlign: 'center' }}>
                     <Link 

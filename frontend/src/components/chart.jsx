@@ -97,7 +97,7 @@ function Charts({ transactions }) {
           tooltip: {
             callbacks: {
               label: function(context) {
-                return context.label + ': $' + context.raw.toFixed(2);
+                return context.label + ': ₹' + context.raw.toFixed(2);
               }
             }
           }
@@ -134,7 +134,7 @@ function Charts({ transactions }) {
       data: {
         labels: ['Income', 'Expenses'],
         datasets: [{
-          label: 'Amount ($)',
+          label: 'Amount (₹)',
           data: [totalIncome, totalExpense],
           backgroundColor: ['#48bb78', '#f56565'],
           borderColor: ['#38a169', '#e53e3e'],
@@ -151,7 +151,7 @@ function Charts({ transactions }) {
           tooltip: {
             callbacks: {
               label: function(context) {
-                return context.label + ': $' + context.raw.toFixed(2);
+                return context.label + ': ₹' + context.raw.toFixed(2);
               }
             }
           }
@@ -161,7 +161,7 @@ function Charts({ transactions }) {
             beginAtZero: true,
             ticks: {
               callback: function(value) {
-                return '$' + value;
+                return '₹' + value;
               }
             }
           }
@@ -241,7 +241,7 @@ function Charts({ transactions }) {
         }}>
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#48bb78' }}>
-              ${transactions
+              ₹{transactions
                 .filter(t => t.type === 'income')
                 .reduce((sum, t) => sum + t.amount, 0)
                 .toFixed(2)}
@@ -251,7 +251,7 @@ function Charts({ transactions }) {
           
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#f56565' }}>
-              ${transactions
+              ₹{transactions
                 .filter(t => t.type === 'expense')
                 .reduce((sum, t) => sum + Math.abs(t.amount), 0)
                 .toFixed(2)}

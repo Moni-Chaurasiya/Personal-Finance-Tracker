@@ -23,7 +23,7 @@ function TransactionItem({ transaction, onDelete }) {
   const isIncome = transaction.type === 'income';
   const typeText = transaction.type.toUpperCase();
   const amountPrefix = isIncome ? '+' : '-';
-  const amountText = `${amountPrefix}$${formatAmount(transaction.amount)}`;
+  const amountText = `${amountPrefix}₹${formatAmount(transaction.amount)}`;
 
   return (
     <tr style={{ borderBottom: '1px solid #eee' }}>
