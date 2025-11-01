@@ -3,6 +3,7 @@ const router = express.Router()
 const Transaction=require('../models/Transaction');
 const auth= require('../middleware/auth');
 
+
 router.post('/',auth, async(req,res)=>{
     try {
         const {title,amount,category,date,type} = req.body;
