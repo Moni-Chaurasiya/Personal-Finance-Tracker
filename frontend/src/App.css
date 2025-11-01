@@ -93,3 +93,11 @@
   color: #22543d;
   border: 1px solid #9ae6b4;
 }
+
+ @media (max-width: 768px) {
+
+.btn {
+  padding: 6px 10px;
+ }
+
+}
