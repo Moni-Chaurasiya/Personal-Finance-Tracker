@@ -7,7 +7,9 @@ import {
   Title,
   Tooltip,
   Legend,
-  ArcElement
+  ArcElement,
+  BarController,
+  PieController,
 } from 'chart.js';
 
 ChartJS.register(
@@ -17,7 +19,9 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  ArcElement
+  ArcElement,
+  BarController,  
+  PieController 
 );
 
 function Charts({ transactions }) {
