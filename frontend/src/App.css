@@ -9,10 +9,10 @@
 }
 
 .card {
-  background: white;
+  background: rgb(74, 209, 246);
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(49, 180, 241, 0.768);
   margin-bottom: 20px;
 }
 
@@ -27,26 +27,26 @@
 }
 
 .btn-primary {
-  background: #667eea;
+  background: #051c81;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #5a67d8;
+  background: #0212a8;
 }
 
 .btn-success {
-  background: #48bb78;
+  background: #109848;
   color: white;
 }
 
 .btn-danger {
-  background: #f56565;
+  background: #b40a0a;
   color: white;
 }
 
 .btn-warning {
-  background: #ed8936;
+  background: #df6d10;
   color: white;
 }
 
