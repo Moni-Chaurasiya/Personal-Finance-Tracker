@@ -2,11 +2,23 @@
 A full-stack MERN application to track personal finances with CRUD functionality.
 This project contains both frontend (React + Vite) and backend (Node.js + Express + MongoDB) in a single repository.
 
+## 🌐 Deployed Links
+
+* **Frontend (Vercel):** [Live Demo](https://personal-finance-trackers-hazel.vercel.app/)
+
+If you don’t want to register a new user, you can use the following credentials:
+
+<strong> Email: monichaurasiya993@gmail.com </strong> 
+
+<strong>  Password: Moni1234 </strong>
+
+
 <p align="center">
   <img src="./frontend/src/assets/dashboard.png" alt="AR Measurement Result" width="600">
   <img src="./frontend/src/assets/Chart.png" alt="AR Measurement Result" width="600">
   <img src="./frontend/src/assets/transactionList.png" alt="AR Measurement Result" width="600">
 </p>
+
 
 ## 🛠️ Tech Stack
 - **Frontend:** React (Vite), Axios
@@ -84,7 +96,7 @@ npm run dev
 * Add environment variable in Vercel:
 
   ```env
-  VITE_API_URL=https://your-backend.onrender.com/api
+  VITE_API_URL= https://personal-finance-tracker-ypmg.onrender.com/api 
   ```
 
 ---
@@ -101,11 +113,7 @@ Base URL: `http://localhost:5000/api`
 | PUT    | /transaction/\:id  | Update transaction     |
 | DELETE | /transaction/\:id  | Delete transaction     |
 
----
 
-## 🌐 Deployed Links
-
-* **Frontend (Vercel):** [Live Demo](https://personal-finance-trackers-hazel.vercel.app/)
 
 
 

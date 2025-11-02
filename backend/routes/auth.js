@@ -15,7 +15,7 @@ router.post('/register',async(req,res)=>{
         const salt = await bcrypt.genSalt(10);
         const hashedPassword=await bcrypt.hash(password,salt)
 
-        user=new user({
+        user=new User({
             name,
             email,
             password:hashedPassword
@@ -43,7 +43,7 @@ router.post('/register',async(req,res)=>{
         })
 
     } catch (error) {
-        console.log("Error while registering the user",err);
+        console.log("Error while registering the user",error);
         res.status(500).send({
             message: 'Some error happened while registering the user'
         })
