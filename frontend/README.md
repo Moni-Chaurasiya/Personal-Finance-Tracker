@@ -3,9 +3,9 @@ A full-stack MERN application to track personal finances with CRUD functionality
 This project contains both frontend (React + Vite) and backend (Node.js + Express + MongoDB) in a single repository.
 
 <p align="center">
-  <img src="./frontend/src/assets/dashboard.png" alt="AR Measurement Result" width="600">
-  <img src="./frontend/src/assets/Chart.png" alt="AR Measurement Result" width="600">
-  <img src="./frontend/src/assets/transactionList.png" alt="AR Measurement Result" width="600">
+  <img src="./src/assets/dashboard.png" alt="dashboard" width="600">
+  <img src="./src/assets/Chart.png" alt="Chart" width="600">
+  <img src="./src/assets/transactionList.png" alt="transactionList" width="600">
 </p>
 
 ## 🛠️ Tech Stack
